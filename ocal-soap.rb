@@ -56,7 +56,7 @@ end
 
 def get_calendar(username,password,url)
   t1 = Date.parse(Time.now.strftime('%Y/%m/%d 00:00:00')).to_time
-  t2 = t1+(86400*7)
+  t2 = t1+(86400*60)
 
   result = soapCall("Search",soapEnv(soapHeader(username,password),search(t1,t2)),url)
 
