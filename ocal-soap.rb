@@ -49,6 +49,7 @@ def soapCall(action,envelope,url)
   }
   
   clnt = HTTPClient.new
+  clnt.ssl_config.verify_mode = OpenSSL::SSL::VERIFY_NONE
   result = clnt.post(url,envelope,headers)
   result.body.content
 end

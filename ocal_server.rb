@@ -8,15 +8,15 @@ class MainController < Ramaze::Controller
   map "/ocal"
 
   def get_ocal()
-    url = "https://calendar.andrew.cmu.edu/ocws-bin/ocas.fcgi"
+    url = "https://calendar.emu.edu/ocws-bin/ocas.fcgi"
 
 vcal_header = <<VCAL
 BEGIN:VCALENDAR
-PRODID:-//Jason Carr//Jason Carr 1.0//EN
+PRODID:-//Jason Garber//Jason Garber 1.0//EN
 VERSION:2.0
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:Jason Carr
+X-WR-CALNAME:EMU Work
 X-WR-TIMEZONE:America/New_York
 BEGIN:VTIMEZONE
 TZID:America/New_York
