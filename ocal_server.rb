@@ -4,8 +4,10 @@ require 'ocal-soap'
 require 'rexml/document'
 
 
-class MainController < Ramaze::Controller
-  map "/ocal"
+class MainController < Ramaze::Controller  
+  def index
+    "Subscribe to your <a href=\"#{r(:get_ocal)}\">iCal feed</a> (requires EMU login)."
+  end
 
   def get_ocal()
     url = "https://calendar.emu.edu/ocws-bin/ocas.fcgi"
