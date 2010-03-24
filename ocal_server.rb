@@ -12,7 +12,7 @@ class MainController < Ramaze::Controller
 
 vcal_header = <<VCAL
 BEGIN:VCALENDAR
-PRODID:-//Jason Garber//Jason Garber 1.0//EN
+PRODID:-//Jason Garber//oCal2iCal 1.0//EN
 VERSION:2.0
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
