@@ -76,5 +76,3 @@ VCAL
     out
   end
 end
-
-Ramaze.start
